@@ -79,3 +79,17 @@ Contributions, suggestions, and PRs are welcome! Whether it's improving performa
 ## 📜 License
 
 This project is released under the MIT License.
+
+## 🧪 Provided Detection Models
+
+This project includes two optimized detection models:
+
+1. **Custom YOLOv5 with ReLU Activation**:
+   - Replaces default activation with **ReLU**, significantly accelerating inference.
+   - Achieves **nearly double the speed** with only **minor accuracy loss**.
+
+2. **YOLOv5 with SU and LE (SULE) Structure**:
+   - Experimental model exploring novel activation and structural improvements.
+   - Balanced approach for scenarios where both performance and precision are critical.
+
+These models provide flexibility for different deployment needs, allowing developers to choose between maximum performance or balanced accuracy.
