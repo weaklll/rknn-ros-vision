@@ -80,16 +80,21 @@ Contributions, suggestions, and PRs are welcome! Whether it's improving performa
 
 This project is released under the MIT License.
 
+
 ## 🧪 Provided Detection Models
 
-This project includes two optimized detection models:
+This project includes three optimized detection models, each using a different activation function:
 
-1. **Custom YOLOv5 with ReLU Activation**:
-   - Replaces default activation with **ReLU**, significantly accelerating inference.
-   - Achieves **nearly double the speed** with only **minor accuracy loss**.
+1. **YOLOv5 with SiLU Activation (Default)**:
+   - The standard activation used in original YOLOv5 architecture.
+   - Offers balanced performance and accuracy.
 
-2. **YOLOv5 with SU and LE (SULE) Structure**:
-   - Experimental model exploring novel activation and structural improvements.
-   - Balanced approach for scenarios where both performance and precision are critical.
+2. **YOLOv5 with FReLU Activation**:
+   - Employs Feature-wise ReLU (FReLU), designed for enhancing spatial sensitivity.
+   - Suitable for complex visual scenarios requiring richer feature representations.
 
-These models provide flexibility for different deployment needs, allowing developers to choose between maximum performance or balanced accuracy.
+3. **YOLOv5 with ReLU Activation**:
+   - Replaces SiLU with **ReLU**, significantly boosting inference speed.
+   - Achieves **nearly double the throughput** with only **minor accuracy degradation**.
+
+These model variants allow you to tailor performance for specific application needs, whether it’s speed-critical real-time tasks or high-accuracy inference scenarios.
